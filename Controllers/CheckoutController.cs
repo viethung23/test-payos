@@ -5,11 +5,13 @@ using Net.payOS;
 public class CheckoutController : Controller
 {
     private readonly PayOS _payOS;
+    private readonly ILogger _logger;
 
 
-    public CheckoutController(PayOS payOS)
+    public CheckoutController(PayOS payOS,ILogger logger)
     {
         _payOS = payOS;
+        _logger = logger;
 
     }
 
@@ -17,6 +19,7 @@ public class CheckoutController : Controller
     public IActionResult Index()
     {
         // Trả về trang HTML có tên "MyView.cshtml"
+        _logger.LogInformation("hehehehe hehehe hehehehe heheheheh");
         return View("index");
     }
     [HttpGet("/cancel")]
