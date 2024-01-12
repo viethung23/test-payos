@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hungnv\\Desktop\\payos-demo-dotnet-core\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PayOSNetCore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PayOSNetCore.props",
+      "PackagePath": "build\\PayOSNetCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PayOSNetCore.props",
+      "PackagePath": "buildMultiTargeting\\PayOSNetCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PayOSNetCore.props",
+      "PackagePath": "buildTransitive\\PayOSNetCore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

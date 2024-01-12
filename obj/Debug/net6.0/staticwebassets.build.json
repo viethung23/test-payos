@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "cz+JObrbxMRGoBP21vVBTAhj1S/1e1AGh4zGHfPeH38=",
+  "Source": "PayOSNetCore",
+  "BasePath": "_content/PayOSNetCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PayOSNetCore\\wwwroot",
+      "Source": "PayOSNetCore",
+      "ContentRoot": "C:\\Users\\hungnv\\Desktop\\payos-demo-dotnet-core\\wwwroot\\",
+      "BasePath": "_content/PayOSNetCore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hungnv\\Desktop\\payos-demo-dotnet-core\\wwwroot\\css\\style.css",
+      "SourceId": "PayOSNetCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hungnv\\Desktop\\payos-demo-dotnet-core\\wwwroot\\",
+      "BasePath": "_content/PayOSNetCore",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
