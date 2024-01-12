@@ -9,9 +9,9 @@ using Net.payOS.Types;
 public class PaymentController : ControllerBase
 {
     private readonly PayOS _payOS;
-    private readonly ILogger _logger;
+    private readonly ILogger<PaymentController> _logger;
 
-    public PaymentController(PayOS payOS,ILogger logger)
+    public PaymentController(PayOS payOS,ILogger<PaymentController> logger)
     {
         _payOS = payOS;
         _logger = logger;

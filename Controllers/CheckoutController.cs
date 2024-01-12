@@ -5,10 +5,10 @@ using Net.payOS;
 public class CheckoutController : Controller
 {
     private readonly PayOS _payOS;
-    private readonly ILogger _logger;
+    private readonly ILogger<CheckoutController> _logger;
 
 
-    public CheckoutController(PayOS payOS,ILogger logger)
+    public CheckoutController(PayOS payOS,ILogger<CheckoutController> logger)
     {
         _payOS = payOS;
         _logger = logger;
