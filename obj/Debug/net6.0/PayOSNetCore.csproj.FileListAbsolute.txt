@@ -107,3 +107,4 @@ C:\Users\hungnv\Desktop\payos-demo-dotnet-core\obj\Debug\net6.0\refint\PayOSNetC
 C:\Users\hungnv\Desktop\payos-demo-dotnet-core\obj\Debug\net6.0\PayOSNetCore.pdb
 C:\Users\hungnv\Desktop\payos-demo-dotnet-core\obj\Debug\net6.0\PayOSNetCore.genruntimeconfig.cache
 C:\Users\hungnv\Desktop\payos-demo-dotnet-core\obj\Debug\net6.0\ref\PayOSNetCore.dll
+C:\Users\hungnv\Desktop\payos-demo-dotnet-core\bin\Debug\net6.0\appsettings.json

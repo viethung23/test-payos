@@ -1,10 +1,10 @@
 using Net.payOS;
 
-IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("appsettings.Development.json").Build();
+IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
 PayOS payOS = new PayOS(configuration["Environment:PAYOS_CLIENT_ID"] ?? throw new Exception("Cannot find environment"),
-                    configuration["Environment:PAYOS_API_KEY"] ?? throw new Exception("Cannot find environment"),
-                    configuration["Environment:PAYOS_CHECKSUM_KEY"] ?? throw new Exception("Cannot find environment"));
+    configuration["Environment:PAYOS_API_KEY"] ?? throw new Exception("Cannot find environment"),
+    configuration["Environment:PAYOS_CHECKSUM_KEY"] ?? throw new Exception("Cannot find environment"));
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -12,23 +12,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton(payOS);
 
 builder.Services.AddControllers();
-builder.Services.AddSwaggerGen();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddMvc();
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.AllowAnyOrigin()  // custom Origin here 
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+        });
 });
 var app = builder.Build();
-app.UseSwagger();
-app.UseSwaggerUI();
+
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
