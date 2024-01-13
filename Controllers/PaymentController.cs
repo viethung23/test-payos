@@ -21,6 +21,7 @@ public class PaymentController : ControllerBase
     public IActionResult payOSTransferHandler(WebhookType body)
     {
         _logger.LogInformation("Đã vào hàm ròi -- 1");
+        _logger.LogInformation(body.ToString());
         try
         {
             WebhookData data = _payOS.verifyPaymentWebhookData(body);

@@ -32,6 +32,7 @@ public class CheckoutController : Controller
     public IActionResult Success()
     {
         // Trả về trang HTML có tên "MyView.cshtml"
+        _logger.LogInformation("nhảy vào link /Success");
         return View("success");
     }
     [HttpPost("/create-payment-link")]
@@ -40,9 +41,7 @@ public class CheckoutController : Controller
         try
         {
             int orderCode = int.Parse(DateTimeOffset.Now.ToString("ffffff"));
-            ItemData item = new ItemData("Mì tôm hảo hảo ly", 1, 1000);
-            List<ItemData> items = new List<ItemData>();
-            items.Add(item);
+            List<ItemData> items = new ();
             PaymentData paymentData = new PaymentData(orderCode, 5000, "Thanh toan don hang", items, "https://localhost:3002/cancel", "https://localhost:3002/success");
 
             CreatePaymentResult createPayment = await _payOS.createPaymentLink(paymentData);
