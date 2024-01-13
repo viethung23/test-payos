@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayOSNetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b025589635dd33d394d6d5dec9046ec5e380b9f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb3cb0469ced9996f6e690f19df280c4756fa49a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayOSNetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayOSNetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

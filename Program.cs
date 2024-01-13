@@ -19,11 +19,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddMvc();
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:3003", "https://8efd-42-118-137-199.ngrok-free.app").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
-        });
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()  // custom Origin here 
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
 });
 var app = builder.Build();
 app.UseSwagger();
